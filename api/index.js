@@ -1,7 +1,8 @@
 import express from 'express'
 
-import example from './example'
+import { echo, keys } from './example'
 
 export default express()
-	.get('/example/echo', (req, res) => res.send(example.echo(req.query)))
-	.get('/example/keys', (req, res) => res.send(example.keys(req.query)))
+	.get('/hello', (req, res) => res.send('Hello, World!'))
+	.get('/echo', (req, res) => res.send(echo(req.query)))
+	.get('/keys', (req, res) => res.send(keys(req.query)))

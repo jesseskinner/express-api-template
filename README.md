@@ -18,6 +18,12 @@ and then run:
 npm start
 ```
 
+```
+http://localhost:1980/api/hello
+http://localhost:1980/api/echo?abc=123&def=456
+http://localhost:1980/api/keys?abc=123&def=456
+```
+
 ## Testing & Development
 
 ```bash
