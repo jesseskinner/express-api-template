@@ -1,4 +1,6 @@
+// do hotrestarting in development
+import './test/hotrestart'
+
 export default {
-	port: 1980,
-	hotrestart: true
+	port: 1980
 }

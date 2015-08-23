@@ -6,9 +6,11 @@ A basic express api using babel and chai mocha.
 Edit config.js: 
 
 ```javascript
+// do hotrestarting in development
+import './test/hotrestart'
+
 export default {
-	port: 1980,
-	hotrestart: true
+	port: 1980
 }
 ```
 
@@ -17,6 +19,8 @@ and then run:
 ```bash
 npm start
 ```
+
+and visit:
 
 ```
 http://localhost:1980/api/hello
