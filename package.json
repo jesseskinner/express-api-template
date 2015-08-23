@@ -1,0 +1,27 @@
+{
+  "name": "express-api-template",
+  "version": "0.0.1",
+  "description": "A basic express api using babel and chai mocha.",
+  "main": "app.js",
+  "dependencies": {
+    "babel": "^5.8.21",
+    "babel-runtime": "^5.8.20",
+    "express": "^4.13.3"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "mocha-babel": "^3.0.0"
+  },
+  "scripts": {
+    "test": "mocha --compilers js:mocha-babel test/**/*.js",
+    "watch": "mocha --compilers js:mocha-babel test/**/*.js -wGR nyan",
+    "start": "babel-node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jesseskinner/express-api-template.git"
+  },
+  "author": "Jesse Skinner <@JesseSkinner>",
+  "license": "MIT",
+  "private": true
+}
