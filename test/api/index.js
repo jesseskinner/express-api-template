@@ -1,11 +1,10 @@
 import { expect } from 'chai'
-import api from '../../api/index'
+import api from '../../api'
 
-// make sure api/index doesn't contain any syntax errors
 describe('api', () => {
 
-	it('should be defined', () => {
-		expect(api).to.not.be.undefined
+	it('api.listen should be a function', () => {
+		expect(api.listen).to.be.a('function')
 	})
 
 })
